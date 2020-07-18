@@ -12,8 +12,7 @@
 - Options.
 
 .Sh DESCRIPTION
-prints data and arguments according to the stipulated format and are executed according to the established options or
-.Nm
+prints data and arguments according to the stipulated format and are executed according to the established options or Printf
  .
 .Pp
 
