@@ -16,8 +16,8 @@
  */
 typedef struct base
 {
-    char *op;
-    int (*f)(va_list p);
+	char *op;
+	int (*f)(va_list p);
 } base_t;
 
 
@@ -28,7 +28,7 @@ int selector(int *i, const char *format, va_list x);
 /* Basic Prototypes */
 int op_char(va_list p);
 int op_string(va_list p);
-int op_percent();
+int op_percent(void);
 int op_numbers(va_list arg);
 
 /* Advanced Prototypes*/

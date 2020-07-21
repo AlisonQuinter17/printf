@@ -10,10 +10,11 @@
  */
 int op_char(va_list p)
 {
-    int container = (char)va_arg(p, int);
-    _putchar(container);
+	int container = (char)va_arg(p, int);
 
-    return(1);
+	_putchar(container);
+
+	return (1);
 }
 
 
@@ -29,9 +30,10 @@ int op_string(va_list p)
 {
 	int i = 0;
 	char *s;
+
 	s = va_arg(p, char*);
 
-	if(s == NULL)
+	if (s == NULL)
 	{
 		s = "(nil)";
 	}
@@ -41,7 +43,7 @@ int op_string(va_list p)
 		_putchar(s[i]);
 		i++;
 	}
-	return(i);
+	return (i);
 }
 
 
@@ -53,10 +55,10 @@ int op_string(va_list p)
  *
  * Return: 1.
  */
-int op_percent()
+int op_percent(void)
 {
-    _putchar('%');
-    return(1);
+	_putchar('%');
+	return (1);
 }
 
 
@@ -72,9 +74,9 @@ int op_percent()
  */
 int op_numbers(va_list arg)
 {
-    unsigned int i, p, r;
+	unsigned int i, p, r;
 
-    int n = va_arg(arg, int);
+	int n = va_arg(arg, int);
 
 	if (n < 0)
 	{
@@ -99,5 +101,5 @@ int op_numbers(va_list arg)
 	{
 		_putchar(((i / p) % 10) + '0');
 	}
-    return(0);
+	return (0);
 }

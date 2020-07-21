@@ -1,5 +1,13 @@
 #include "holberton.h"
 
+/**
+ * op_unsigned - main function
+ * @arg: The argument pointer.
+ *
+ * Description: This function prints a unsigned int.
+ *
+ * Return: 0.
+ */
 int op_unsigned(va_list arg)
 {
 	unsigned int i, p, r;
@@ -19,5 +27,5 @@ int op_unsigned(va_list arg)
 	{
 		_putchar(((i / p) % 10) + '0');
 	}
-	return(0);
+	return (0);
 }

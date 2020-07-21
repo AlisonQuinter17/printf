@@ -17,14 +17,14 @@ int _printf(const char *format, ...)
 
 	va_start(x, format);
 
-	if(!format || format[i] == '\n' || format[i] == '\0')
+	if (!format || format[i] == '\n' || format[i] == '\0')
 	{
-		return(-1);
+		return (-1);
 	}
 
 	while (format && format[i])
 	{
-		if(format[i] == '%')
+		if (format[i] == '%')
 		{
 			count += selector(&i, format, x);
 		}
@@ -37,5 +37,5 @@ int _printf(const char *format, ...)
 		i++;
 	}
 	va_end(x);
-	return(count);
+	return (count);
 }
