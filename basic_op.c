@@ -35,7 +35,7 @@ int op_string(va_list p)
 
 	if (s == NULL)
 	{
-		s = "(nil)";
+		s = "(null)";
 	}
 
 	while (s[i] != '\0')
@@ -76,11 +76,12 @@ int op_numbers(va_list arg)
 {
 	unsigned int i, p, r;
 
-	int n = va_arg(arg, int);
+	int n = va_arg(arg, int), count = 0;
 
 	if (n < 0)
 	{
 		_putchar('-');
+		count++;
 		i = n * -1;
 	}
 	else
@@ -100,6 +101,7 @@ int op_numbers(va_list arg)
 	for (; p >= 1; p /= 10)
 	{
 		_putchar(((i / p) % 10) + '0');
+		count++;
 	}
-	return (0);
+	return (count);
 }

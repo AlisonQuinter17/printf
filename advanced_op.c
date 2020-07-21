@@ -11,7 +11,7 @@
 int op_unsigned(va_list arg)
 {
 	unsigned int i, p, r;
-	unsigned int n = va_arg(arg, int);
+	unsigned int n = va_arg(arg, int), count = 0;
 
 	i = n;
 	p = 1;
@@ -26,6 +26,7 @@ int op_unsigned(va_list arg)
 	for (; p >= 1; p /= 10)
 	{
 		_putchar(((i / p) % 10) + '0');
+		count++;
 	}
-	return (0);
+	return (count);
 }
