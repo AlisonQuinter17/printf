@@ -45,7 +45,7 @@ holberton.h ........... Contains the prototypes of the functions used that
 selector.c ............ Contains the function that selects the correct
                         function requested by the user
 basic_op.c ............ Contains the functions that allow printing basic
-                        formats (% s,% d,% c% f, %%).
+                        formats (%c, %s, %d, %i, %r, %u, %%).
 advanced_op.c ......... Contains advanced printing functions
                         (Unsigned, reverse, ...).
 auxiliar_op.c ......... Contains the auxiliary _putchar function, used to print
