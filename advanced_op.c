@@ -64,7 +64,7 @@ int print_rev(va_list p)
 
 /**
  * rot13 - main function
- * @arg: The argument pointer.
+ * @p: The argument pointer.
  *
  * Description: This function prints the rot13'ed string.
  *
