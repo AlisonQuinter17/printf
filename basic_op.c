@@ -55,7 +55,7 @@ int op_string(va_list p)
  *
  * Return: 1.
  */
-int op_percent(void)
+int op_percent()
 {
 	_putchar('%');
 	return (1);

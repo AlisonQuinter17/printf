@@ -28,7 +28,7 @@ int selector(int *i, const char *format, va_list x);
 /* Basic Prototypes */
 int op_char(va_list p);
 int op_string(va_list p);
-int op_percent(void);
+int op_percent();
 int op_numbers(va_list arg);
 
 /* Advanced Prototypes*/
