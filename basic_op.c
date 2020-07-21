@@ -55,7 +55,7 @@ int op_string(va_list p)
  *
  * Return: 1.
  */
-int op_percent()
+int op_percent(va_list __attribute__((unused)) p)
 {
 	_putchar('%');
 	return (1);
