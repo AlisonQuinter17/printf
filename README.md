@@ -47,7 +47,7 @@ selector.c ............ Contains the function that selects the correct
 basic_op.c ............ Contains the functions that allow printing basic
                         formats (%c, %s, %d, %i, %%).
 advanced_op.c ......... Contains advanced printing functions
-                        (Unsigned; u, reverse; r, ...).
+                        (Unsigned; u, reverse; r, rot13; R, ...).
 auxiliar_op.c ......... Contains the auxiliary _putchar function, used to print
 ~~~
 ### Note ###
