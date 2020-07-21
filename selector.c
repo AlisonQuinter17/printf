@@ -26,12 +26,13 @@ int selector(int *i, const char *format, va_list x)
 		{"i", op_numbers},
 		{"u", op_unsigned},
 		{"r", print_rev},
+		{"R", rot13},
 		{NULL, NULL}
 	};
 
 	int c = 0;
 
-	while (c < 7)
+	while (c < 8)
 	{
 		if (*(ops[c].op) == format[k + 1])
 		{
@@ -45,7 +46,7 @@ int selector(int *i, const char *format, va_list x)
 		c++;
 	}
 
-	if (l == 7)
+	if (l == 8)
 	{
 		_putchar(format[k]);
 		count++;

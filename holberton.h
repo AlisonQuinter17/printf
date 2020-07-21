@@ -34,6 +34,7 @@ int op_numbers(va_list arg);
 /* Advanced Prototypes*/
 int op_unsigned(va_list arg);
 int print_rev(va_list p);
+int rot13(va_list p);
 
 /* Auxiliar Prototypes */
 int _putchar(char c);
