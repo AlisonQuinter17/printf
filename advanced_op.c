@@ -30,3 +30,34 @@ int op_unsigned(va_list arg)
 	}
 	return (count);
 }
+
+/**
+ * print_rev - main function
+ * @p: The argument pointer.
+ *
+ * Description: This function reverse a string.
+ *
+ * Return: The total number of characters..
+ */
+int print_rev(va_list p)
+{
+	int i = 0, count = 0;
+	char *s = va_arg(p, char*);
+
+	if (s == NULL)
+	{
+		s = "(null)";
+	}
+
+	while (s[i])
+	{
+		i++;
+	}
+	i--;
+	for (; i >= 0; i--)
+	{
+		_putchar(s[i]);
+		count++;
+	}
+	return (count);
+}

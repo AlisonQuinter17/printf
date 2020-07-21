@@ -30,7 +30,7 @@ int selector(int *i, const char *format, va_list x)
 
 	int c = 0;
 
-	while (c < 6)
+	while (c < 7)
 	{
 		if (*(ops[c].op) == format[k + 1])
 		{
@@ -44,7 +44,7 @@ int selector(int *i, const char *format, va_list x)
 		c++;
 	}
 
-	if (l == 6)
+	if (l == 7)
 	{
 		_putchar(format[k]);
 		count++;
