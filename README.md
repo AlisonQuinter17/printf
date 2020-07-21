@@ -1,5 +1,6 @@
 # printf
 ![](https://github.com/AlisonQuinter17/printf/blob/master/final%20gif.gif)
+
 This project contains a mini version of the **printf** function
 that we can find in the library <stdio.h>,
 if we are using the **C programming language.**
