@@ -16,7 +16,7 @@
 int selector(int *i, const char *format, va_list x)
 {
 	int count = 0;
-	int k = *i;
+	int k = *i, l = 0;
 
 	base_t ops[] = {
 		{"c", op_char},
@@ -34,15 +34,21 @@ int selector(int *i, const char *format, va_list x)
 	{
 		if (*(ops[c].op) == format[k + 1])
 		{
-			if (format[k + 1] != '%')
-			{
-				count += ops[c].f(x);
-				*i += 1;
-			}
-			else
-				count += ops[c].f(x);
+			count += ops[c].f(x);
+			*i += 1;
+		}
+		else
+		{
+			l++;
 		}
 		c++;
 	}
+
+	if (l == 6)
+	{
+		_putchar(format[k]);
+		count++;
+	}
+
 	return (count);
 }
