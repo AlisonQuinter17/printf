@@ -45,17 +45,25 @@ holberton.h ........... Contains the prototypes of the functions used that
 selector.c ............ Contains the function that selects the correct
                         function requested by the user
 basic_op.c ............ Contains the functions that allow printing basic
-                        formats (% s,% d,% c% f, %%).
+                        formats (%c, %s, %d, %i, %r, %u, %%).
 advanced_op.c ......... Contains advanced printing functions
                         (Unsigned, reverse, ...).
 auxiliar_op.c ......... Contains the auxiliary _putchar function, used to print
+~~~
+### Note ###
+If you want to review the manual of our _printf function you can execute
+in your terminal:
+~~~
+$ man ./man_3_printf
 ~~~
 ## Environment ##
 * Language: C
 * OS: Ubuntu 14.04 LTS
 * Compiler: gcc 4.8.4
 * Style guidelines: [Betty style](https://github.com/holbertonschool/Betty/wiki)
+and
+[Betty-doc](https://github.com/holbertonschool/Betty/blob/master/betty-doc.pl)
 ### Authors ###
-* [Alisson Quintero](https://twitter.com/AlisonQuinter17)
+* [Alison Quintero](https://twitter.com/AlisonQuinter17)
 * [Christian Bedoya](https://twitter.com/ChrisBedoya11)
 * [Angie Perez](https://twitter.com/xiommyperez)
