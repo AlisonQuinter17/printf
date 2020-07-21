@@ -61,7 +61,9 @@ $ man ./man_3_printf
 * OS: Ubuntu 14.04 LTS
 * Compiler: gcc 4.8.4
 * Style guidelines: [Betty style](https://github.com/holbertonschool/Betty/wiki)
+and
+[Betty-doc](https://github.com/holbertonschool/Betty/blob/master/betty-doc.pl)
 ### Authors ###
-* [Alisson Quintero](https://twitter.com/AlisonQuinter17)
+* [Alison Quintero](https://twitter.com/AlisonQuinter17)
 * [Christian Bedoya](https://twitter.com/ChrisBedoya11)
 * [Angie Perez](https://twitter.com/xiommyperez)
