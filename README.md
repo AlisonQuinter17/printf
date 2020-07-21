@@ -50,6 +50,12 @@ advanced_op.c ......... Contains advanced printing functions
                         (Unsigned, reverse, ...).
 auxiliar_op.c ......... Contains the auxiliary _putchar function, used to print
 ~~~
+### Note ###
+If you want to review the manual of our _printf function you can execute
+in your terminal:
+~~~
+$ man ./man_3_printf
+~~~
 ## Environment ##
 * Language: C
 * OS: Ubuntu 14.04 LTS
