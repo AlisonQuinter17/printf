@@ -1,3 +1,4 @@
+![](https://ibb.co/zHRggK7)
 # printf
 This project contains a mini version of the **printf** function
 that we can find in the library <stdio.h>,
