@@ -21,13 +21,13 @@ $ cd printf
 ~~~
 
 To compile you need a main program, as you wish ... for example:
-
-> int main(void)
-> {
->       _printf("%s %c%drld", "Hello", "W", 0);
->       return(0);
-> }
-
+~~~
+int main(void)
+{
+       _printf("%s %c%drld", "Hello", "W", 0);
+       return(0);
+}
+~~~
 And execute the following in your terminal:
 ~~~
 $ gcc -Wall -Werror -Wextra -pedantic -Wno-format *.c -o a
