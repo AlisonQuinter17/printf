@@ -6,13 +6,13 @@ The **printf** function basically allows us to print any argument
 given to standard or terminal output. This means that we can print
 any combination of strings, integers, and other different data types.
 
-##Synopsis##
+## Synopsis ##
 In this repository you can find all the code necessary for our
 custom printf function to run.
 Our mini version currently handles conversion specifiers: *c, s,%, d, i*,
 and does not yet support field width, precision, markup, or length modifiers.
 
-##How To Install & Compile##
+## How To Install & Compile ##
 To have this repository and its content, you must execute the following on
 your terminal:
 ~~~
@@ -37,7 +37,7 @@ Hello W0rld
 $
 ~~~
 
-##Description of the files contained.##
+## Description of the files contained. ##
 man_3_printf .......... Custom manual for our _printf function
 print.c ............... Contains our _printf function
 holberton.h ........... Contains the prototypes of the functions used that
@@ -49,13 +49,13 @@ basic_op.c ............ Contains the functions that allow printing basic
 advanced_op.c ......... Contains advanced printing functions
 	      		(Unsigned, reverse, ...).
 auxiliar_op.c ......... Contains the auxiliary _putchar function, used to print
-##Environment##
-*Language: C
-*OS: Ubuntu 14.04 LTS
-*Compiler: gcc 4.8.4
-*Style guidelines: [Betty style](https://github.com/holbertonschool/Betty/wiki)
+## Environment ##
+* Language: C
+* OS: Ubuntu 14.04 LTS
+* Compiler: gcc 4.8.4
+* Style guidelines: [Betty style](https://github.com/holbertonschool/Betty/wiki)
 
-###Authors###
-*[Alisson Quintero](https://twitter.com/AlisonQuinter17)
-*[Christian Bedoya](https://twitter.com/ChrisBedoya11)
-*[Angie Perez](https://twitter.com/xiommyperez)
+### Authors ###
+* [Alisson Quintero](https://twitter.com/AlisonQuinter17)
+* [Christian Bedoya](https://twitter.com/ChrisBedoya11)
+* [Angie Perez](https://twitter.com/xiommyperez)
