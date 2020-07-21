@@ -1,6 +1,3 @@
-<<<<<<< HEAD
-README to printf
-=======
 # printf
 This project contains a mini version of the **printf** function
 that we can find in the library <stdio.h>,
@@ -70,4 +67,3 @@ and
 * [Alison Quintero](https://twitter.com/AlisonQuinter17)
 * [Christian Bedoya](https://twitter.com/ChrisBedoya11)
 * [Angie Perez](https://twitter.com/xiommyperez)
->>>>>>> 1fe3bf02d49bd777b9d2b8c662c53fce2501d163
