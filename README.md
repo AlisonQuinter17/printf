@@ -1,4 +1,4 @@
-![](https://ibb.co/zHRggK7)
+![](https://github.com/AlisonQuinter17/printf/blob/master/final%20gif.gif)
 # printf
 This project contains a mini version of the **printf** function
 that we can find in the library <stdio.h>,
