@@ -38,6 +38,7 @@ $
 ~~~
 
 ## Description of the files contained. ##
+~~~
 man_3_printf .......... Custom manual for our _printf function
 print.c ............... Contains our _printf function
 holberton.h ........... Contains the prototypes of the functions used that
@@ -49,6 +50,7 @@ basic_op.c ............ Contains the functions that allow printing basic
 advanced_op.c ......... Contains advanced printing functions
 	      		(Unsigned, reverse, ...).
 auxiliar_op.c ......... Contains the auxiliary _putchar function, used to print
+~~~
 ## Environment ##
 * Language: C
 * OS: Ubuntu 14.04 LTS
