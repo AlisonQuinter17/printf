@@ -10,6 +10,15 @@
 .Bl
 .Nm 
 - Options.
+.Pp
+.Nm
+librarys:
+.Pp
+#include <stdio.h>
+.Pp
+#include <stdlib.h>
+.Pp
+#include <stdarg.h>
 
 .Sh DESCRIPTION
 prints data and arguments according to the stipulated format and are executed according to the established options or Printf
@@ -20,28 +29,51 @@ prints data and arguments according to the stipulated format and are executed ac
 .Pp 
 --version - printf followed by --version you can see printf versions and outputs
 .Bl -tag -width -indent  \" Begins a tagged list
-.It item a               \" Each item preceded by .It macro
-Description of item a
-.It item b
-Description of item b
-.El                      \" Ends the list
+
+
+.El
 .Pp
 assigning a certain FORMAT we can control the print output of printf, the assignments are:
 .Bl -tag -width -indent
-.It  \\" 
+.It  " 
 double quote.
 
-.It  \\% 
+.It  % 
 a single %
-.It  \\%b 
+.It  %b 
 argument as a string with '\' escapes interpreted 
-.It  \\0
+.It  0
 pad with zeros to the left up to the value given by the previous flag.
-.It \\+
+.It +
 print the sign of a number
 .El
 .Pp
-.\" 
+
+.El
+.Pp
+There are different types of flags that are used when you want to print with printf, they are used when making an assignment, as we will see below:
+.El
+
+.Bl
+.Pp
+%d , %i - print a number "%d" referring to a decimal number or "%i" to an integer, both are integer type assignments.
+.El
+.Bl
+.Pp
+
+%c - print characters
+.El
+.Bl
+.Pp
+%s - print the string
+.El
+.Bl
+.Pp
+%x, %X - print the numbers in base hexadecimal(16), x to print lowercase and X to print uppercase.
+.El
+.Pp
+%u - base 10 integer
+
 .Sh EXAMPLES
 .Bl 
 .It 
