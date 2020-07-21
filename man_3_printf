@@ -5,8 +5,8 @@
 .Nm Printf
 .N - print or display assigned data.
 .Sh SYNOPSIS
-.Nm
- - FORMAT [ARGUMENT]...
+
+printf - FORMAT [ARGUMENT]...
 .Bl
 .Nm 
 - Options.
@@ -28,23 +28,23 @@ prints data and arguments according to the stipulated format and are executed ac
 --help - with printf followed by --help you can see the display help options.
 .Pp 
 --version - printf followed by --version you can see printf versions and outputs
-.Bl -tag -width -indent  \" Begins a tagged list
+.Bl -tag -width -indent  
 
 
 .El
 .Pp
 assigning a certain FORMAT we can control the print output of printf, the assignments are:
 .Bl -tag -width -indent
-.It  " 
+.It  \\" 
 double quote.
 
-.It  % 
+.It  \\% 
 a single %
-.It  %b 
+.It  \\%b 
 argument as a string with '\' escapes interpreted 
-.It  0
+.It  \\0
 pad with zeros to the left up to the value given by the previous flag.
-.It +
+.It \\+
 print the sign of a number
 .El
 .Pp
@@ -77,12 +77,45 @@ There are different types of flags that are used when you want to print with pri
 .Sh EXAMPLES
 .Bl 
 .It 
-FILE_1 description
-.It Pa /Users/joeuser/Library/really_long_file_name
-FILE_2 description
-.El
 
+int main(void)
+.Pp.
+{
+
+.Bl
+
+int len;
+.Pp
+int len2;
+
+.Pp
+unsigned int ui;
+
+.El
+.Bl
+.Pp
+.Bl
+    len = _printf("Let's try to printf a simple sentence.\n");
+.Pp
+    ui = (unsigned int)INT_MAX + 1024;
+    
+.Pp
+    _printf("Length:[%d, %i]\n", len, len);
+.Pp
+    _printf("Negative:[%d]\n", -762534);
+.Pp
+    _printf("Unsigned:[%u]\n", ui);
+.Pp
+    _printf("Character:[%c]\n", 'H');
+.Pp
+    _printf("String:[%s]\n", "I am a string !");
+.Pp
+    _printf("Len:[%d]\n", len);
+.Pp
+    len = _printf("Percent:[%%]\n");
+.El
+}
 .Sh SEE ALSO
 .Xr Printf 3 ,
 .Xr fPrintf 3 ,
-.Xr scanf 3 ,
+.Xr scanf 3  .
