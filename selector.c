@@ -25,6 +25,7 @@ int selector(int *i, const char *format, va_list x)
 		{"d", op_numbers},
 		{"i", op_numbers},
 		{"u", op_unsigned},
+		{"r", print_rev},
 		{NULL, NULL}
 	};
 
