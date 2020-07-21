@@ -5,7 +5,6 @@
 .Nm Printf
 .N - print or display assigned data.
 .Sh SYNOPSIS
-
 printf - FORMAT [ARGUMENT]...
 .Bl
 .Nm 

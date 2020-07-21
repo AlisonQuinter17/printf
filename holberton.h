@@ -1,5 +1,5 @@
-#ifndef PRINTF_H
-#define PRINTF_H
+#ifndef _PRINTF_H_
+#define _PRINTF_H_
 
 /* Libraries */
 #include <stdio.h>
@@ -28,11 +28,13 @@ int selector(int *i, const char *format, va_list x);
 /* Basic Prototypes */
 int op_char(va_list p);
 int op_string(va_list p);
-int op_percent();
+int op_percent(va_list __attribute__((unused)) p);
 int op_numbers(va_list arg);
 
 /* Advanced Prototypes*/
 int op_unsigned(va_list arg);
+int print_rev(va_list p);
+int rot13(va_list p);
 
 /* Auxiliar Prototypes */
 int _putchar(char c);
