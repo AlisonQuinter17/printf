@@ -87,10 +87,11 @@ Here are some examples of how the _printf function works:
   + Output: octal [134]
 
 -  _printf("Percent: [%%%%]\n");
- + Output: Percent: [%%]
+  + Output: Percent: [%%]
 
 -  _printf("Reverse: [%r]\n", "Programming is great!");
   + Output: Reverse: [!taerg si gnimmargorP]
+  
 ## Environment ##
 * Language: C
 * OS: Ubuntu 14.04 LTS
