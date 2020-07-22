@@ -34,9 +34,7 @@ int _putchar(char c);
 
 .SH DESCRIPTION
 .PP
-The  _printf()  function  is used to print the “character, string, float, integer, octaland hexadecimal values” onto the output screen. The functions in the _printf()
-  family produce
-    output according to a format as described below
+The  _printf()  function  is used to print the “character, string, float, integer, octaland hexadecimal values” onto the output screen. The functions in the _printf() family produce output according to a format as described below.
 .PP
 prints data and arguments according to the stipulated format and are executed according to the established options or Printf
 There are different types of flags that are used when you want to print with print\
@@ -51,6 +49,7 @@ f, they are used when making an assignment, as we will see below:
 .PP
  %u - base 10 integer
 .PP
+ root13 - rot13 is a cipher that replaces letter by letter every 13 positions.
 .SH RETURN VALUE
 Upon successful return, these functions return the number of characters printed (e\
 xcluding
