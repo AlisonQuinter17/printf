@@ -1,9 +1,8 @@
-.TH _PRINTF 1 "17/3/2020" Version "_PRINTF MAN PAGE"
+.TH _PRINTF 1 "July 2020" Version(0.1) "_PRINTF MAN PAGE"
 .SH NAME
-.B _printf
-
-- _print or display assigned data.
-
+.PP
+.B _printf - print formatted output conversion.
+.PP
 .SH SYNOPSIS
 .PP
 .b _printf - FORMAT [ARGUMENT]...
@@ -26,6 +25,10 @@ int op_numbers(va_list arg);
 .PP
 int op_unsigned(va_list arg);
 .PP
+int op_octal(va_list p);
+.PP
+int op_binary(va_list p);
+.PP
 int print_rev(va_list p);
 .PP
 int rot13(va_list p);
@@ -35,26 +38,37 @@ int _putchar(char c);
 
 .SH DESCRIPTION
 .PP
-The  _printf()  function  is used to print the “character, string, float, integer, octaland hexadecimal values” onto the output screen. The functions in the _printf() family produce output according to a format as described below.
+The _printf () function is used to print the "characters, strings, floats, integers, decimals, octals, and binaries" on the output screen. The _printf () family functions produce results according to a format as described below.
 .PP
-prints data and arguments according to the stipulated format and are executed according to the established options or Printf
+Prints data and arguments according to the stipulated format and are executed according to the established options or Printf
 There are different types of flags that are used when you want to print with print\
 f, they are used when making an assignment, as we will see below:
 .PP
  %d , %i - print a number "%d" referring to a decimal number or "%i" to an integer,\
  both are integer type assignments.
 .PP
- %c - print characters
+ %c - Print characters.
 .PP
- %s - print the string
+ %s - Print the string.
 .PP
- %u - base 10 integer
+ %u - Print a unsigned integrer.
 .PP
- root13 - rot13 is a cipher that replaces letter by letter every 13 positions.
+ %r - Print a reversed string.
+.PP
+ %R - prints the rot13'ed string.
+.PP
+ %o - Print a octal number.
+.PP
+ %b - Print a binary numer.
+.PP
+ %% - Print a percent.
+.PP
 .SH RETURN VALUE
+.PP
 Upon successful return, these functions return the number of characters printed (e\
 xcluding
 the null byte used to end output to strings).
+.PP
 .SH FORMAT
 The format string is a character string, beginning and ending in its initial shift state,
 if any. The format string is composed of zero or more directives: ordinary characters 
@@ -67,22 +81,29 @@ each of which results in fetching zero or more subsequent arguments.
 .PP
 #include "holberton.h"
 .PP
+_printf("char: %c\n", 'H');
+.PP
+Output: char: H
+.PP
+_printf("string: %s\n", "Hi guy !");
+.PP
+Output: string: Hi guy !
+.PP
+_printf("integer: %i\n", 26);
+.PP
+Output: integer: 26
+.PP
+_printf("integrer %i\n", 88);
+.PP
+Output: integrer 88
 .PP
 _printf("decimal: %d\n", 10000);
 .PP
 Output: decimal: 10000
 .PP
-_printf("char: %c\n", 'H');
+_printf("octal %o\n", 92);
 .PP
-Output: char: H
-.PP
-_printf("string %s\n", "Hi guy !");
-.PP
-Output: string Hi guy !
-.PP
-_printf("integer: %i\n", 26);
-.PP
-Output: integer: 26
+Output: octal 134
 .PP
 _printf("Percent:[%%]\n");
 .PP
