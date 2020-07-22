@@ -59,13 +59,14 @@ in your terminal:
 $ man ./man_3_printf
 ~~~
 ## Formats ##
-*%c: This type of format is used to represent a character
-*%s: This type of format is used to represent a string of characters
-%dd or %i: This type of format is used to represent base 10 signed integer (int)
-*%%: In this case, the character% is printed
-*%u: Unsigned decimal notation
-*%r: Reverse a string notation
-*%R: This format prints a string in rot13 notation
+* %c: This type of format is used to represent a character
+* %s: This type of format is used to represent a string of characters
+* %dd or %i: This type of format is used to represent base 10
+signed integer (int)
+* %%: In this case, the character% is printed
+* %u: Unsigned decimal notation
+* %r: Reverse a string notation
+* %R: This format prints a string in rot13 notation
 ## Environment ##
 * Language: C
 * OS: Ubuntu 14.04 LTS
