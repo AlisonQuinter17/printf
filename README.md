@@ -49,7 +49,7 @@ selector.c ............ Contains the function that selects the correct
 basic_op.c ............ Contains the functions that allow printing basic
                         formats (%c, %s, %d, %i, %%).
 advanced_op.c ......... Contains advanced printing functions
-                        (Unsigned; u, reverse; r, rot13; R, ...).
+                        (Unsigned; %u, reverse; %r, rot13; %R, ...).
 auxiliar_op.c ......... Contains the auxiliary _putchar function, used to print
 ~~~
 ### Note ###
@@ -58,6 +58,14 @@ in your terminal:
 ~~~
 $ man ./man_3_printf
 ~~~
+## Formats ##
+*%c: This type of format is used to represent a character
+*%s: This type of format is used to represent a string of characters
+%dd or %i: This type of format is used to represent base 10 signed integer (int)
+*%%: In this case, the character% is printed
+*%u: Unsigned decimal notation
+*%r: Reverse a string notation
+*%R: This format prints a string in rot13 notation
 ## Environment ##
 * Language: C
 * OS: Ubuntu 14.04 LTS
