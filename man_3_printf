@@ -1,120 +1,143 @@
-.Dd 18/07/20
-.Dt printf
-.Os User command
-.Sh NAME
-.Nm Printf
-.N - print or display assigned data.
-.Sh SYNOPSIS
-printf - FORMAT [ARGUMENT]...
-.Bl
-.Nm 
-- Options.
-.Pp
-.Nm
-librarys:
-.Pp
-#include <stdio.h>
-.Pp
-#include <stdlib.h>
-.Pp
-#include <stdarg.h>
+.TH _PRINTF 1 "17/3/2020" Version "_PRINTF MAN PAGE"
+.SH NAME
+.B _printf
+- _print or display assigned data.
+.SH SYNOPSIS
+.PP
+.b _printf - FORMAT [ARGUMENT]...
+.PP
+.b _printf - Options.
+.PP
+_printf librarys:
+.PP
+.B #include <stdio.h>                                                             
 
-.Sh DESCRIPTION
-prints data and arguments according to the stipulated format and are executed according to the established options or Printf
- .
-.Pp
+.PP
+int _printf(const char *format, ...);
 
---help - with printf followed by --help you can see the display help options.
-.Pp 
---version - printf followed by --version you can see printf versions and outputs
-.Bl -tag -width -indent  
+.PP
+.B #include <stdlib.h>
+.P
+ typedef struct base
+.P
+ {
+.PP
+        char *op;
+.P
+        int (*f)(va_list p);
+.P
+ }
 
 
-.El
-.Pp
-assigning a certain FORMAT we can control the print output of printf, the assignments are:
-.Bl -tag -width -indent
-.It  \\" 
-double quote.
 
-.It  \\% 
-a single %
-.It  \\%b 
-argument as a string with '\' escapes interpreted 
-.It  \\0
-pad with zeros to the left up to the value given by the previous flag.
-.It \\+
-print the sign of a number
-.El
-.Pp
+.PP
+.B #include <stdarg.h>
 
-.El
-.Pp
-There are different types of flags that are used when you want to print with printf, they are used when making an assignment, as we will see below:
-.El
 
-.Bl
-.Pp
-%d , %i - print a number "%d" referring to a decimal number or "%i" to an integer, both are integer type assignments.
-.El
-.Bl
-.Pp
+.PP
+#include "holberton.h"
+.PP
+int _printf(const char *format, ...);
+.PP
+int selector(int *i, const char *format, va_list x);
+.PP
+int op_percent(va_list _attribute_((unused)) p);
+.PP
+int op_char(va_list p);
+.PP
+int op_string(va_list p);
+.PP
+int op_numbers(va_list arg);
+.PP
+int op_unsigned(va_list arg);
+.PP
+int print_rev(va_list p);
+.PP
+int rot13(va_list p);
+.PP
+int _putchar(char c);
+.PP
+.SH RETURN VALUE
+Upon successful return, these functions return the number of characters printed (excluding
+the null byte used to end output to strings).
 
-%c - print characters
-.El
-.Bl
-.Pp
-%s - print the string
-.El
-.Bl
-.Pp
-%x, %X - print the numbers in base hexadecimal(16), x to print lowercase and X to print uppercase.
-.El
-.Pp
-%u - base 10 integer
+.SH DESCRIPTION
+.PP
+prints data and arguments according to the stipulated format and are executed acco\
+rding to the established options or Printf
+.SH
+ --help - with printf followed by --help you can see the display help options.
+.SH
+ --version - printf followed by --version you can see printf versions and outputs
+.SH
+ -tag -width -indent
+.SH 
+ " - double quote.
+.PP
+ % - a single %
+.PP
+ %b - argument as a string with '\\' escapes interpreted
+.PP
+ 0 - pad with zeros to the left up to the value given by the previous flag.
+.PP
+ + - print the sign of a number
+.PP
+ There are different types of flags that are used when you want to print with print\
+f, they are used when making an assignment, as we will see below:
+.PP
+ %d , %i - print a number "%d" referring to a decimal number or "%i" to an integer,\
+ both are integer type assignments.
+.PP
+ %c - print characters
+.PP
+ %s - print the string
+.PP
+ %u - base 10 integer
+.PP
+.SH FORMAT
+The format string is a character string, beginning and ending in its initial shift state,
+if any. The format string is composed of zero or more directives: ordinary characters 
+(not %), which are copied unchanged to the output stream; and conversion specifications,
+each of which results in fetching zero or more subsequent arguments.
+.PP
+.SH EXAMPLES
+.PP
+ With main.c we can test our functions:
+.PP
+#include "holberton.h"
+.PP
+.PP
+_printf("decimal: %d\n", 10000);
+.PP
+Output: decimal: 10000
+.PP
+_printf("char: %c\n", 'H');
+.PP
+Output: char: H
+.PP
+_printf("string %s\n", "Hi guy !");
+.PP
+Output: string Hi guy !
+.PP
+_printf("integer: %i\n", 26);
+.PP
+Output: integer: 26
+.PP
+_printf("Percent:[%%]\n");
+.PP
+Output: Percent:[%]
+.PP
+.SH BUGS
+Unknown
+.PP
 
-.Sh EXAMPLES
-.Bl 
-.It 
+.SH AUTHORS
+Written by:
+.PP
+-Alison Quintero.
+.PP
+-Christian Bedoya.
+.PP
+-Angie Perez.
 
-int main(void)
-.Pp.
-{
-
-.Bl
-
-int len;
-.Pp
-int len2;
-
-.Pp
-unsigned int ui;
-
-.El
-.Bl
-.Pp
-.Bl
-    len = _printf("Let's try to printf a simple sentence.\n");
-.Pp
-    ui = (unsigned int)INT_MAX + 1024;
-    
-.Pp
-    _printf("Length:[%d, %i]\n", len, len);
-.Pp
-    _printf("Negative:[%d]\n", -762534);
-.Pp
-    _printf("Unsigned:[%u]\n", ui);
-.Pp
-    _printf("Character:[%c]\n", 'H');
-.Pp
-    _printf("String:[%s]\n", "I am a string !");
-.Pp
-    _printf("Len:[%d]\n", len);
-.Pp
-    len = _printf("Percent:[%%]\n");
-.El
-}
-.Sh SEE ALSO
-.Xr Printf 3 ,
-.Xr fPrintf 3 ,
-.Xr scanf 3  .
+.Th 
