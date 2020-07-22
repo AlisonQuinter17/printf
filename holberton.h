@@ -33,6 +33,8 @@ int op_numbers(va_list arg);
 
 /* Advanced Prototypes*/
 int op_unsigned(va_list arg);
+int op_octal(va_list p);
+int op_binary(va_list p);
 int print_rev(va_list p);
 int rot13(va_list p);
 

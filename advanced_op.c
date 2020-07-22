@@ -32,12 +32,76 @@ int op_unsigned(va_list arg)
 }
 
 /**
+ * op_octal - main function
+ * @p: The argument pointer.
+ *
+ * Description: This function prints a octal number.
+ *
+ * Return: The total number of chacarters.
+ */
+int op_octal(va_list p)
+{
+	unsigned int oct = va_arg(p, int), buff[1000];
+	int  count = 0, i;
+
+	if (oct == 0)
+	{
+		_putchar('0');
+		return (1);
+	}
+
+	while (oct > 0)
+	{
+		buff[count] = oct % 8;
+		oct /= 8;
+		count++;
+	}
+	for (i = count - 1; i >= 0; i--)
+	{
+		_putchar(buff[i] + '0');
+	}
+	return (count);
+}
+
+/**
+ * op_binary - main function
+ * @p: The argument pointer.
+ *
+ * Description: This function prints a binary number.
+ *
+ * Return: The total number of characters.
+ */
+int op_binary(va_list p)
+{
+	unsigned int bin = va_arg(p, int), buff[1000];
+	int  count = 0, i;
+
+	if (bin == 0)
+	{
+		_putchar('0');
+		return (1);
+	}
+
+	while (bin > 0)
+	{
+		buff[count] = bin % 2;
+		bin /= 2;
+		count++;
+	}
+	for (i = count - 1; i >= 0; i--)
+	{
+		_putchar(buff[i] + '0');
+	}
+	return (count);
+}
+
+/**
  * print_rev - main function
  * @p: The argument pointer.
  *
  * Description: This function reverse a string.
  *
- * Return: The total number of characters..
+ * Return: The total number of characters.
  */
 int print_rev(va_list p)
 {
