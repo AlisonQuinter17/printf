@@ -62,7 +62,7 @@ $ man ./man_3_printf
 ## Formats ##
 * %c: This type of format is used to represent a character
 * %s: This type of format is used to represent a string of characters
-* %dd or %i: This type of format is used to represent base 10
+* %d or %i: This type of format is used to represent base 10
 signed integer (int)
 * %%: In this case, the character% is printed
 * %u: Unsigned decimal notation
