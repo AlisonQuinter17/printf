@@ -49,7 +49,8 @@ selector.c ............ Contains the function that selects the correct
 basic_op.c ............ Contains the functions that allow printing basic
                         formats (%c, %s, %d, %i, %%).
 advanced_op.c ......... Contains advanced printing functions
-                        (Unsigned; %u, reverse; %r, rot13; %R, ...).
+                        (Unsigned; %u, reverse; %r, rot13; %R, octal; o,
+			binary; b).
 auxiliar_op.c ......... Contains the auxiliary _putchar function, used to print
 ~~~
 ### Note ###
@@ -67,6 +68,8 @@ signed integer (int)
 * %u: Unsigned decimal notation
 * %r: Reverse a string notation
 * %R: This format prints a string in rot13 notation
+* %o: Unsigned base 8 integer (int)
+* %b: This format refers to binary number.
 ## Environment ##
 * Language: C
 * OS: Ubuntu 14.04 LTS
