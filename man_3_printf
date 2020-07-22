@@ -1,7 +1,6 @@
 .TH _PRINTF 1 "17/3/2020" Version "_PRINTF MAN PAGE"
 .SH NAME
 .B _printf
-
 - _print or display assigned data.
 
 .SH SYNOPSIS
