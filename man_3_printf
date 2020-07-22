@@ -4,6 +4,7 @@
 .B _printf - print formatted output conversion.
 .PP
 .SH SYNOPSIS
+
 .PP
 .b _printf - FORMAT [ARGUMENT]...
 .PP
