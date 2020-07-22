@@ -8,33 +8,6 @@
 .PP
 .b _printf - Options.
 .PP
-_printf librarys:
-.PP
-.B #include <stdio.h>                                                             
-
-.PP
-int _printf(const char *format, ...);
-
-.PP
-.B #include <stdlib.h>
-.P
- typedef struct base
-.P
- {
-.PP
-        char *op;
-.P
-        int (*f)(va_list p);
-.P
- }
-
-
-
-.PP
-.B #include <stdarg.h>
-
-
-.PP
 #include "holberton.h"
 .PP
 int _printf(const char *format, ...);
