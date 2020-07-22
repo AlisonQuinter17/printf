@@ -39,20 +39,17 @@ $
 ~~~
 
 ## Description of the files contained. ##
-~~~
-man_3_printf .......... Custom manual for our _printf function
-print.c ............... Contains our _printf function
-holberton.h ........... Contains the prototypes of the functions used that
-                        can be found in the other files
-selector.c ............ Contains the function that selects the correct
-                        function requested by the user
-basic_op.c ............ Contains the functions that allow printing basic
-                        formats (%c, %s, %d, %i, %%).
-advanced_op.c ......... Contains advanced printing functions
-                        (Unsigned; %u, reverse; %r, rot13; %R, octal; o,
-			binary; b).
-auxiliar_op.c ......... Contains the auxiliary _putchar function, used to print
-~~~
+
+| File  name   | Description   |
+| ------------- |:-------------:|
+| holberton.h | Header file, contains the prototypes of the functions used that can be found in the other files. |
+| printf.c      | Contains the _printf function.|
+| selector.c    | Contains the function that selects the correct  function requested by the user. |
+| basic_op.c    | Contains the functions that allow printing basic  formats (%c, %s, %d, %i, %%).|
+| advanced_op.c | Contains advanced printing functions (Unsigned; %u, reverse; %r, rot13; %R, octal; %o, binary; %b).|
+| auxiliar_op.c | Contains the auxiliary _putchar function, used to print.|
+|man_3_printf   | Custom manual for our _printf function.|
+
 ### Note ###
 If you want to review the manual of our _printf function you can execute
 in your terminal:
