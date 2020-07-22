@@ -67,6 +67,30 @@ signed integer (int)
 * %R: This format prints a string in rot13 notation
 * %o: Unsigned base 8 integer (int)
 * %b: This format refers to binary number.
+
+#####EXAMPLES
+Here are some examples of how the _printf function works:
+
+- _printf("char: [%c]\n", 'H');
+ + Output: char: [H]
+
+- _printf("string: [%s]\n", "Hello people !");
+ + Output: string: [Hello people !]
+
+-  _printf("integer: [%i]\n", 26);
+  + Output: integer: [26]
+
+- _printf("decimal: [%d]\n", 10000);
+ + Output: decimal: [10000]
+
+-  _printf("octal [%o]\n", 92);
+   + Output: octal [134]
+
+-  _printf("Percent: [%%%%]\n");
+ + Output: Percent: [%%]
+
+-  _printf("Reverse: [%r]\n", "Programming is great!");
+  + Output: Reverse: [!taerg si gnimmargorP]
 ## Environment ##
 * Language: C
 * OS: Ubuntu 14.04 LTS
