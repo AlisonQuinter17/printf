@@ -2,6 +2,7 @@
 .SH NAME
 .B _printf
 - _print or display assigned data.
+
 .SH SYNOPSIS
 .PP
 .b _printf - FORMAT [ARGUMENT]...
@@ -30,6 +31,7 @@ int rot13(va_list p);
 .PP
 int _putchar(char c);
 .PP
+
 .SH RETURN VALUE
 Upon successful return, these functions return the number of characters printed (excluding
 the null byte used to end output to strings).
