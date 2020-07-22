@@ -32,32 +32,14 @@ int rot13(va_list p);
 int _putchar(char c);
 .PP
 
-.SH RETURN VALUE
-Upon successful return, these functions return the number of characters printed (excluding
-the null byte used to end output to strings).
-
 .SH DESCRIPTION
 .PP
-prints data and arguments according to the stipulated format and are executed acco\
-rding to the established options or Printf
-.SH
- --help - with printf followed by --help you can see the display help options.
-.SH
- --version - printf followed by --version you can see printf versions and outputs
-.SH
- -tag -width -indent
-.SH 
- " - double quote.
+The  _printf()  function  is used to print the “character, string, float, integer, octaland hexadecimal values” onto the output screen. The functions in the _printf()
+  family produce
+    output according to a format as described below
 .PP
- % - a single %
-.PP
- %b - argument as a string with '\\' escapes interpreted
-.PP
- 0 - pad with zeros to the left up to the value given by the previous flag.
-.PP
- + - print the sign of a number
-.PP
- There are different types of flags that are used when you want to print with print\
+prints data and arguments according to the stipulated format and are executed according to the established options or Printf
+There are different types of flags that are used when you want to print with print\
 f, they are used when making an assignment, as we will see below:
 .PP
  %d , %i - print a number "%d" referring to a decimal number or "%i" to an integer,\
@@ -69,6 +51,10 @@ f, they are used when making an assignment, as we will see below:
 .PP
  %u - base 10 integer
 .PP
+.SH RETURN VALUE
+Upon successful return, these functions return the number of characters printed (e\
+xcluding
+the null byte used to end output to strings).
 .SH FORMAT
 The format string is a character string, beginning and ending in its initial shift state,
 if any. The format string is composed of zero or more directives: ordinary characters 
